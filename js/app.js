@@ -30,6 +30,6 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     if (typeof installmentAmount === 'number' && typeof finalProfit === 'number') {
         installmentAmountParagraph.textContent = `The amount of each installment: ${installmentAmount.toLocaleString('en-US', {maximumFractionDigits: 2})}`;
-        finalProfitParagraph.textContent = `The remaining amount for you after paying the entire debt (${numberofInstallments} Months): ${finalProfit.toLocaleString('en-US', {maximumFractionDigits: 2})}`;
+        finalProfitParagraph.textContent = `The remaining amount for you after ${numberofInstallments} months when you have paid all the installments of this loan: ${finalProfit.toLocaleString('en-US', {maximumFractionDigits: 2})}`;
     }
 });

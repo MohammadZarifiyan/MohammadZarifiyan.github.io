@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation of income from taking a loan</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container-sm">
+      <form id="form" class="my-5">
+        <div class="mb-3">
+          <label for="loan-amount" class="form-label">Loan amont</label>
+          <input id="loan-amount" type="number" min="1" placeholder="Loan amont" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="loan-interest" class="form-label">Loan interest rate</label>
+          <input id="loan-interest" type="number" min="0" placeholder="Loan interest rate" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="number-of-installments" class="form-label">Number of installments</label>
+          <input id="number-of-installments" type="number" min="1" placeholder="Number of installments" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="profit" class="form-label">Interest you can make with less or equal money to your loan</label>
+          <input id="profit" type="number" min="0" placeholder="Interest you can make with less or equal money to your loan" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <p id="installment-amount"></p>
+          <p id="final-profit"></p>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
